@@ -1,0 +1,27 @@
+Estructura del Repositorio
+plaintext
+Copiar código
+ThreatHunting-Framework/
+│
+├── config/
+│   ├── thehive-docker-compose.yml
+│   ├── misp-docker-compose.yml
+│   ├── osquery.conf
+│   └── sigma/
+│       ├── windows-process_creation.yml
+│       ├── linux-network_activity.yml
+│       └── ...
+│
+├── scripts/
+│   ├── install_threathunting.sh
+│   ├── test_simulation.sh
+│   └── convert_sigma_rules.py
+│
+├── documentation/
+│   ├── installation.md
+│   ├── usage.md
+│   └── security_recommendations.md
+│
+├── LICENSE
+├── README.md
+└── .gitignore
