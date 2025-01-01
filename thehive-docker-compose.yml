@@ -1,0 +1,11 @@
+version: '3'
+services:
+  thehive:
+    image: thehiveproject/thehive:4.1.20-1
+    container_name: thehive
+    ports:
+      - "9000:9000"
+    environment:
+      - JAVA_OPTS=-Xms2G -Xmx2G
+    volumes:
+      - ./data:/data
