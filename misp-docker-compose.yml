@@ -1,0 +1,12 @@
+version: '3'
+services:
+  misp:
+    image: harvarditsecurity/misp
+    container_name: misp
+    ports:
+      - "8080:80"
+    environment:
+      - MYSQL_ROOT_PASSWORD=strongpassword
+      - MISP_ADMIN_EMAIL=admin@example.com
+    volumes:
+      - ./misp-data:/var/www/MISP
