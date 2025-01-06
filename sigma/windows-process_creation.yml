@@ -1,0 +1,17 @@
+title: Detect Process Creation
+description: Detect processes commonly associated with malware or unusual activity.
+logsource:
+  category: process_creation
+  product: windows
+detection:
+  selection:
+    Image|endswith:
+      - '\malicious.exe'
+      - '\unusual_process.exe'
+  condition: selection
+fields:
+  - Image
+  - CommandLine
+falsepositives:
+  - Legitimate software with similar names
+level: high
